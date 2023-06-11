@@ -12,9 +12,9 @@ import (
 
 const (
 	maxLen           = 16 * 1024
-	finalPrompt      = "Please review the above code"
+	finalPrompt      = "That is all the patch files.\n\nPlease review the above code"
 	diffTmpl         = "This is patch %d of %d. Do not review it yet, just respond with 'Awaiting patch files'.\n\n```\n%s\n```\n\n"
-	guidelinesPrefix = "These are the guidelines of the project, consider them when doing the review. Just respond with '" + finalPrompt + "'.\n\n"
+	guidelinesPrefix = "These are the guidelines of the project, consider them when doing the review. Just respond with 'Awaiting patch files'.\n\n"
 )
 
 var (
